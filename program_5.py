@@ -117,10 +117,10 @@ for skill in skills_set:
     if len(skill) > 5:
         print(skill)
 
-# Convert set back to list for sorting
+
 skills_list = list(skills_set)
 
-# Manual alphabetical sorting (Bubble Sort)
+# alphabetical sorting
 n = len(skills_list)
 for i in range(n):
     for j in range(0, n - i - 1):
