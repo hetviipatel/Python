@@ -39,7 +39,7 @@ while i< len(questions):
     
     response = input("enter your option:").upper()
     
-    if(response == exit):
+    if(response == "exit"):
         exit()
      
     if(response not in ["A","B","C","D" ,"a", "b", "c" , "d"] or response == " "):
