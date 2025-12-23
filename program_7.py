@@ -6,7 +6,8 @@ students = {
 
 present = 0
 absent = 0
-
+max = 0
+max_list = []
 for ch , i in students.items():
     for j in i:
         if j == 'P':
@@ -16,9 +17,13 @@ for ch , i in students.items():
         else: 
             # print("Invalid attendance status",j)    
             continue   
+    if(present > max):
+        max = present
+        max_list = [ch]
+    elif(present == max):
+        max_list.append(ch)
     print(f"{ch} - Present: {present}, Absent: {absent}")
     present = 0
     absent = 0
     
-    
-
+print(max_list) 

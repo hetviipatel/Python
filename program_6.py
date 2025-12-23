@@ -37,12 +37,12 @@ while i< len(questions):
     for key , value in q["options"].items():
         print(key,value)
     
-    response = input("enter your option:").upper()
+    response = input("enter your option:").upper().strip()
     
     if(response == "exit"):
         exit()
      
-    if(response not in ["A","B","C","D"] or response == " "):
+    if(response not in ["A","B","C","D"]):
         print("Enter valid output")
         continue
         

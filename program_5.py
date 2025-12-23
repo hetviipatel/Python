@@ -101,16 +101,14 @@ skills = input("Enter skills=")
 
 # Convert to list 
 skills_list = skills.split(",")
+print(skills_list)
 #remove space
-for skill in skills_list:
-    skill = skill.strip()
-    skills_list.append(skill)
-
+skill = skills.strip()
+skills_list.append(skill)
 
 skills_set = set(skills_list)
 
 print("total unique skills:", len(skills_set))
-
 
 print("skills with more than 5 characters:")
 for skill in skills_set:
