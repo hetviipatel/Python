@@ -37,7 +37,7 @@ while i< len(questions):
     for key , value in q["options"].items():
         print(key,value)
     
-    response = input("enter your option").upper()
+    response = input("enter your option:").upper()
     
     if(response == exit):
         exit()
