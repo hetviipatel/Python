@@ -42,7 +42,7 @@ while i< len(questions):
     if(response == "exit"):
         exit()
      
-    if(response not in ["A","B","C","D" ,"a", "b", "c" , "d"] or response == " "):
+    if(response not in ["A","B","C","D"] or response == " "):
         print("Enter valid output")
         continue
         
