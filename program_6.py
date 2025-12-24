@@ -1,3 +1,8 @@
+# Design a simple quiz game using a while loop. The program asks a series of multiple-choice questions to the user. For each correct answer, the user gets +1 point.
+# The quiz ends either when all questions are answered or the user types 'exit'.
+# After the quiz ends, show the total score.
+# Handle invalid inputs (options not A/B/C/D or empty).
+
 questions = [
     {
         "question": "Who is known as the destroyer in the Hindu Trinity?",
@@ -29,15 +34,17 @@ questions = [
 point = 0 
 i = 0 
 
+# quiz loop
 while i< len(questions):
     
     q = questions[i]
     print(q["question"])
     
+    # display options
     for key , value in q["options"].items():
         print(key,value)
     
-    response = input("enter your option:").upper().strip()
+    response = input("enter your option:").upper().strip() 
     
     if(response == "exit"):
         exit()
@@ -52,5 +59,6 @@ while i< len(questions):
         print("Incorrect ansewer")
     
     i = i+1
+
 print("Quiz is finishied")
 print(f"your score is {point}/5. Thanks for playing")

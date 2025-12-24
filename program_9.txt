@@ -1,4 +1,9 @@
+FINDING ERROR AND CORRECT THE CODE
 Q1
+name = "Radar"
+if name == name.reverse():
+    print("Palindrome")
+ANS:   
 1.string has no attribute reverse
 2.error is occure due to name is string and string hasn't any method named reverse
 3. name = "Radar"
@@ -6,45 +11,77 @@ Q1
      print("Palindrome)
 
 Q2
+s = "Hello"
+print(s[5])
+ANS:
 1.out of index
 2.s can contain 5 charater but index is starting from 0 so it occur
 3. s="Hello"
    print(s[4])
 
 Q3
+s = ""
+s[0] = "J"
+ANS:
 1.string is immutable
 2.string are immutable that's why it not assign any value
 3. s=""
    s="J"
 
 Q4
+s = "MADAM"
+if s == s.lower()[::-1]:
+    print("Palindrome")
+ANS:
 1.logical error
 2.in if condition left side's s varible is capital as mention and than checking time it's convert to lower case so it doesn't valid
 3.s = "MADAM"
 if s == s[::-1]:
     print("Palindrome")
 
-Q5 No error
+Q5 
+word = "hello"
+count = 0
+for i in range(len(word)):
+    if word[i] in "aeiou":
+        count += 1
+print(count)
+ANS:
+No error
 
 Q6
+nums = [1, 2, 3]
+for i in range(4):
+    print(nums[i])
+ANS:
 1.out of index
 2.num has 3 element and range is end at 4 
 3. nums = [1,2,3]
    for i in range(len(nums)):
        print(nums[i])
 Q7
+numbers = [1, 2, 3]
+numbers.append[4]
+ANS:
 1.sytax error
 2.number.append has square braket insted of round braket
 3.numbers = [1,2,3]
   numbers.append(4)
 
 Q8
+nums = [1, 2, 3]
+print(nums.pop(3))
+ANS:
 1.out of index
 2.pop contain 3rd index but list's indexing start with 0 
 3.nums = [1,2,3]
   print(nums.pop(2))
 
 Q9
+nums = [1, 2, 3]
+nums = nums.sort()
+print(nums)
+ANS:
 1.logical error 
 2.sort is return none means when we store it into some variable
 3.nums = [1, 2, 3,1]
@@ -52,24 +89,36 @@ Q9
   print(nums)
 
 Q10
+lst = []
+lst[0] = 10
+ANS:
 1.out of index
 2.lst doesn't containing any values and next line 10 at index 0 
 3.lst = []
   lst.append(10)
 
 Q11
+t = (1, 2, 3)
+t[0] = 10
+ANS:
 1.tuple is immutable
 2.tuple are immutable so once it's created it doesn't change it's value
 3. t= (1,2,3)
    print(t[0])
    
 Q12
+s = {1, 2, 3}
+s.append(4)
+ANS:
 1.incorrect syntax
 2.list can be declared in square braket
 3.s=[1,2,3]
   s.append(4)
 
 Q13
+skills = set("")
+print(skills[0])
+ANS:
 1.out of index
 2.set is unordered so it's can't print it's value 
 3.skills = set("")
@@ -78,12 +127,19 @@ Q13
 
 
 Q14
+d = {"a": 1, "b": 2}
+print(d["c"])
+ANS:
 1.undefined name
 2.printing c's value but it doesn't exists
 3. d= {"a":1 , "b":2 }
    print(d.get("c","key not found"))
 
 Q15
+emp = {"name": "John", "age": 30}
+for k, v in emp:
+    print(k, v)
+ANS:
 1.syntax error
 2.for loop is printing key and if we want all item to access than use emp.item()
 3.emp = {"name": "John", "age": 30}
@@ -91,6 +147,9 @@ Q15
     print(k, v)
 
 Q16
+d = {}
+d["a"] += 1
+ANS:
 1.logical error
 2.d dic's doesn't have a so it's not adding
 3.d = {}
@@ -98,6 +157,10 @@ Q16
  print(d)
 
 Q17
+n = 10
+if n > 5
+    print("Greater")
+ANS:
 1.syntax error
 2.if has syntax like if than condition and than semicolon
 3.n=10
@@ -105,6 +168,10 @@ Q17
      print("Grater")
 
 Q18
+n = 7
+if n % 2 = 0:
+    print("Even")
+ANS:
 1.syntax error
 2.in if's condition there only one equal insted on ==
 3.n=7
@@ -112,6 +179,14 @@ Q18
      print("Even")
 
 Q19
+x = 5
+if x > 10:
+    print("A")
+if x > 3:
+    print("B")
+else:
+    print("C")
+ANS:
 1.not error but printing incorrect way
 2.it's has if condition means it's check first if and than also p check second if so insted of if it can be elif
 3.x=5
@@ -123,6 +198,10 @@ Q19
     print("c")
 
 Q20
+i = 1
+while i <= 5:
+    print(i)
+ANS:
 1.logical error
 2.in while loop it's doesn't increase i means it's always to 1 and loop will be infinate
 3.i=1
@@ -131,27 +210,49 @@ Q20
      i = i+1
 
 Q21
+for i in range(5):
+print(i)
+ANS:
 1.indentation error
 2.after completing for loop's line the printing statement should be in proper indentation
 3.for i in range(5):
     print(i)
 
 Q22
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+ANS:
+NO ERROR
 
 Q23
+i = 10
+while i < 5:
+    print(i)
+ANS:
 1.logical error
 2.no output bcz it's always i=10 means it's value is doesn't change
 3. i =10
    while i<5:
      print(i)
      i=i-1
+
 Q24
+for i in range(1, 5):
+    print(i)
+    i += 1
+ANS:
 1.logical error
 2.for loops is always increase so it's not required
 3.for i in range(1, 5):
     print(i)
 
 Q25
+age = input()
+if age > 18:
+    print("Eligible")
+ANS:
 1.str can not check insted
 2.age is taking from user and that's bydefault it take as string so it can't be change
 3. age = int(input())
@@ -159,6 +260,10 @@ Q25
       print("Eligible")
 
 Q26
+x = "5"
+y = "3"
+print(x + y)
+ANS:
 1.string concenition
 2.x and y are strings so it's can be concet but not addition 
 3. x=5 
@@ -166,6 +271,10 @@ Q26
    print(x+y)
 
 Q27
+salary = -5000
+if salary:
+    print("Valid")
+ANS:
 1.there is some missing
 2. in if statement there is no condition so it's syntax error
 3. salary = -5000
@@ -173,6 +282,14 @@ Q27
        print("valid")
 
 Q28
+n = 1
+for i in range(2, n):
+    if n % i == 0:
+        print("Not Prime")
+        break
+else:
+    print("Prime")
+ANS:    
 1.logical error
 2. 1 is always be prime so it has one another condition and loop ends at n so it's end with 1 and start with 2 that is in logical
 3.n = 1
@@ -188,6 +305,12 @@ Q28
 
 
 Q29
+nums = []
+total = 0
+for n in nums:
+    total += n
+print(total / len(nums))
+ANS:
 1.zerodivsible
 2.nums list is empty and at the end it's divided by it's length
 3.nums = []
@@ -198,6 +321,10 @@ Q29
     print(total / len(nums))
 
 Q30
+skills = ",Java,C"
+skills = skills.split()
+print(len(skills))
+ANS:
 1.logical error
 2.bydefault split take space and we want split with comma
 3.skills = ",Java,C"

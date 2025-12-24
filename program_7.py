@@ -1,3 +1,10 @@
+# Attendance Summary Generator
+# You are developing a simple attendance tracking system for a classroom. Each student has attendance records for 5 days, marked as:
+#     'P' for Present
+#     'A' for Absent
+# Any other value is considered invalid and should be ignored with a warning.
+# Write a Python program that processes this attendance data and generates a summary report.
+
 students = {
     "Alice": ['P', 'A', 'P', 'P', 'A'],
     "Bob": ['P', 'P', 'X', 'A', 'P'],      # 'X' is invalid
@@ -16,7 +23,8 @@ for ch , i in students.items():
             absent = absent+1
         else: 
             # print("Invalid attendance status",j)    
-            continue   
+            continue 
+    # finding max present  
     if(present > max):
         max = present
         max_list = [ch]
