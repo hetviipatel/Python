@@ -6,4 +6,5 @@ def update_even(num_list):
     print(num_list)
 
 num_list = [[1, 2, 3], [4, 5, 6], [7, 8]]
+# print(num_list[1][1])
 update_even(num_list)
