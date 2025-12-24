@@ -6,13 +6,17 @@ def find_missing_num(num_list):
     num_list.sort()
     print(num_list)
     start = num_list[0]
+    # calculate total sum from start to n
     for i in range(start, n + 1):
+        # skip negative numbers
         if i < 0:
             continue
         total_sum = total_sum + i
         print(total_sum)
+    # calculate actual sum of given numbers
     actual_sum = 0
     for j in num_list:
+        # skip negative numbers
         if j < 0:
             continue
         actual_sum = actual_sum + j
